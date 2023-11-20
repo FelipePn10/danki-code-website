@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --chakra-colors-roxo: #56008c;
+    --chakra-colors-gray-50: #F7FAFC;
+    --chakra-colors-gray-100: #EDF2F7;
+    --chakra-colors-gray-200: #E2E8F0;
+    --chakra-colors-gray-300: #CBD5E0;
+    --chakra-colors-gray-400: #A0AEC0;
+    --chakra-colors-gray-500: #718096;
+    --chakra-colors-gray-600: #4A5568;
+    --chakra-colors-gray-700: #2D3748;
+    --chakra-colors-gray-800: #1A202C;
+    --chakra-colors-gray-900: #171923;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background-color: var(--chakra-colors-gray-900);
+}
+
+.header{
+    border-bottom: 1px solid var(--chakra-colors-gray-500);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: --;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo{
+    padding-top: 2rem;
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .navbar a:hover{
+    color: rgb(255, 255, 255);
+    border-bottom: .1rem solid var(--chakra-colors-gray-500);
+    padding-bottom: .5rem;
+}
+
+.title-main{
+    padding-top: 20rem;
+    padding-left: 12rem;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--chakra-colors-gray-100);
+    line-height: 70px;
+}
