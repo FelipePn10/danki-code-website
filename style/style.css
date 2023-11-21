@@ -15,6 +15,9 @@
 
 :root{
     --chakra-colors-roxo: #56008c;
+    --chakra-colors-purpleScheme-500: #7855C3;
+    --chakra-colors-purpleScheme-600: #AF89FF;
+    --chakra-colors-neutral_purple-900: #110F17;
     --chakra-colors-gray-50: #F7FAFC;
     --chakra-colors-gray-100: #EDF2F7;
     --chakra-colors-gray-200: #E2E8F0;
@@ -25,6 +28,8 @@
     --chakra-colors-gray-700: #2D3748;
     --chakra-colors-gray-800: #1A202C;
     --chakra-colors-gray-900: #171923;
+    --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
+    --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.80)
 }
 
 html{
@@ -43,7 +48,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background: #fff;
+    background: var(--chakra-colors-blackAlpha-600);
     border-radius: 5rem;
 }
 
@@ -62,6 +67,7 @@ body{
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1000;
+    background: var(--chakra-colors-neutral_purple-900)
 }
 
 .header .logo{
@@ -84,8 +90,76 @@ body{
 .title-main{
     padding-top: 20rem;
     padding-left: 12rem;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 700;
     color: var(--chakra-colors-gray-100);
     line-height: 70px;
+    
+}
+
+
+.matricule-se{
+    background: var(--chakra-colors-purpleScheme-500);
+    width: 17%;
+    padding: 1.6rem;
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-left: 12.5rem;
+    margin-top: 4.5rem;
+    cursor: pointer;
+}
+
+.matricule-se a {
+    color:var(--chakra-colors-gray-100);
+}
+
+.matricule-se:hover{
+    background-color: var(--chakra-colors-purpleScheme-600);
+}
+
+.alunos-um{
+    background: url(https://d1i4tvf70h7zdy.cloudfront.net/ead/images/hero/home/avatars.png);
+    background-repeat: no-repeat;
+    height: 16vh;
+    width: 329.2px;
+    background-size: 16.5rem;
+    margin-top: 7rem;
+    margin-left: 12rem;
+}
+
+.alunos-um p{
+    position: absolute;
+    margin-left: 19rem;
+    margin-top: 1.35rem;
+    font-size: 15px;
+    font-weight: bolder;
+    color: var(--chakra-colors-gray-100);
+}
+
+.transformar-vidas{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background: var(--chakra-colors-neutral_purple-900);
+    padding: 50rem;
+}
+
+.title-a{
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--chakra-colors-gray-100);
+    font-size: 19px;
+}
+
+.numero-real{
+    font-weight: 700;
+    text-align: center;
 }
