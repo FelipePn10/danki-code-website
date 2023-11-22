@@ -14,7 +14,6 @@
 }
 
 :root{
-    --chakra-colors-roxo: #56008c;
     --chakra-colors-purpleScheme-500: #7855C3;
     --chakra-colors-purpleScheme-600: #AF89FF;
     --chakra-colors-neutral_purple-900: #110F17;
@@ -29,7 +28,10 @@
     --chakra-colors-gray-800: #1A202C;
     --chakra-colors-gray-900: #171923;
     --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
-    --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.80)
+    --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.80);
+    --chakra-colors-roxo: #56008c;
+    --chakra-space-16: 4rem;
+    --chakra-space-12: 3rem;
 }
 
 html{
@@ -37,6 +39,7 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
+    height: 100vh;
 }
 
 html::-webkit-scrollbar{
@@ -145,21 +148,45 @@ body{
     display: flex;
     position: relative;
     z-index: 2;
+    padding-top: var(--chakra-space-20);
+    padding-bottom: var(--chakra-space-20);
     width: 100%;
-    background: var(--chakra-colors-neutral_purple-900);
-    padding: 50rem;
+    margin-top: 3rem;
+    height: 500px;
+    background-color: var(--chakra-colors-neutral_purple-900);
 }
 
 .title-a{
-    position: absolute;
-    top: 21%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--chakra-colors-gray-100);
-    font-size: 19px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: var(--chakra-space-16);
+    margin-bottom: var(--chakra-space-16);
+    width: 100%;
+    max-width: 1120px;
+    grid-row-gap: var(--chakra-space-12);
+    justify-items: center;
+}
+
+.container{
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .numero-real{
-    font-weight: 700;
+    font-weight: bolder;
     text-align: center;
+    font-size: 5rem;
+    background: linear-gradient();
+    color: var(--chakra-colors-purpleScheme-500);
+}
+
+.paragrafo-numero{
+    color: var(--chakra-colors-gray-100);
+    text-align: center;
+    font-size: 12.5px;
 }
