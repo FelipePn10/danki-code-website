@@ -158,18 +158,14 @@ body{
 
 .title-a{
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
     margin-top: var(--chakra-space-16);
     margin-bottom: var(--chakra-space-16);
     width: 100%;
-    max-width: 1120px;
-    grid-row-gap: var(--chakra-space-12);
     justify-items: center;
 }
 
 .container{
     width: 100%;
-    flex-wrap: wrap;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -183,6 +179,8 @@ body{
     font-size: 5rem;
     background: linear-gradient();
     color: var(--chakra-colors-purpleScheme-500);
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .paragrafo-numero{
