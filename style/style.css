@@ -197,17 +197,17 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.nos-escolha{
-    background: var(--chakra-colors-gray-900);
-    height: 500px;
-    overflow: hidden;
-}
-
 .video-um{
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.nos-escolha{
+    background: var(--chakra-colors-gray-900);
+    height: 800px;
+    overflow: hidden;
 }
 
 .title-nosescolha{
@@ -228,12 +228,26 @@ body{
     display: flex;
 }
 
+.area-nos-escolher-dois{
+    position: absolute;
+    top: 350%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    
+}
+
 .paragrafo-escolher{
-    width: 100%;
-    max-width: 200px;
     text-align: center;
-    margin-top: 4px;
     color: var(--chakra-colors-gray-100);
-    font-size: 18px;
-    line-height: 20px;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.paragrafo-escolher-dois{
+    text-align: center;
+    color: var(--chakra-colors-gray-100);
+    margin-top: 2rem;
+    width: 100%;
+    max-height: 100%;
 }
